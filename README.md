@@ -7,7 +7,7 @@ How to install: copy all files to your Extern (Include / Lib) folder then:
 
 in WinMain add:
 ```
-	auto oNtOpenFile = fNtOpenFile(GetProcAddress(GetModuleHandleA(XorString("ntdll.dll")), XorString("NtOpenFile")));
+	auto oNtOpenFile = fNtOpenFile(LI_FN(GetProcAddress)(LI_FN(LoadLibraryA)(XorString("ntdll.dll")), XorString("NtOpenFile")));
 
 #ifdef DEBUG
 	std::cout << "NtOpenFile offset: " << oNtOpenFile << "\n";
@@ -29,7 +29,7 @@ Jak zainstalowac: skopiuj wszystkie pliki do folderu Extern (Include / Lib)
 w WinMain dodaj:
 ```
 
-	auto oNtOpenFile = fNtOpenFile(GetProcAddress(GetModuleHandleA(XorString("ntdll.dll")), XorString("NtOpenFile")));
+	auto oNtOpenFile = fNtOpenFile(LI_FN(GetProcAddress)(LI_FN(LoadLibraryA)(XorString("ntdll.dll")), XorString("NtOpenFile")));
 
 #ifdef DEBUG
 	std::cout << "NtOpenFile offset: " << oNtOpenFile << "\n";

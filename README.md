@@ -47,3 +47,7 @@ w WinMain dodaj:
 
 Nad WinMain Dodaj cala reszte kodu :)
  
+
+//Credits:
+xp123 
+Unc3nZureD

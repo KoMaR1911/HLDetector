@@ -141,6 +141,11 @@
   <ItemGroup>
     <ClCompile Include="HLDetector.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="detours.h" />
+    <ClInclude Include="Lazy_Import.h" />
+    <ClInclude Include="XOR.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

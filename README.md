@@ -1,6 +1,9 @@
 Easy and shitty way to detect HLBot cheat to Metin2
 
 
+takich metod jak ta jest 1000 w tym syf cheacie xD
+
+
 ENG:
 How to install: copy all files to your Extern (Include / Lib) folder then:
 

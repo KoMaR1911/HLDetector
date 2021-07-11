@@ -76,7 +76,7 @@ NTSTATUS NTAPI hkNtOpenFile(PHANDLE FileHandle, ACCESS_MASK DesiredAccess, POBJE
 
 int main()
 {
-	auto oNtOpenFile = fNtOpenFile(GetProcAddress(GetModuleHandleA(XorString("ntdll.dll")), XorString("NtOpenFile")));
+	auto oNtOpenFile = fNtOpenFile(LI_FN(GetProcAddress)(LI_FN(LoadLibraryA)(XorString("ntdll.dll")), XorString("NtOpenFile")));
 
 #ifdef DEBUG
 	std::cout << "NtOpenFile offset: " << oNtOpenFile << "\n";
